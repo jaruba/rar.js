@@ -90,7 +90,7 @@
 				callback(err);
 				return;
 			}
-			callback(null, new Blob([data], {type: type}));
+			callback(null, data);
 		});
 	};
 
@@ -539,6 +539,7 @@
 			if(callback) callback.call(this, 'Invalid RAR archive');
 			return;
 		}
+		var self = this
 		if(!(entry instanceof RarEntry)) {
 			if(callback) callback.call(this, 'Invalid RAR entry, must be an instance of RarEntry');
 			return;
