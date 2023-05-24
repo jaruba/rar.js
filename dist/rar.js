@@ -127,6 +127,7 @@
 		for(var k in opts) {
 			options[k] = opts[k];
 		}
+		var XMLHttpRequest = require('xhr2');
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState !== 4) return;

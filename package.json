@@ -20,7 +20,8 @@
     "rollup-plugin-typescript": "^1.0.1",
     "sinon": "^7.5.0",
     "tslint": "^5.20.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "xhr2": "^0.2.1"
   },
   "scripts": {
     "clean": "rm -rf lib",
